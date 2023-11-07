@@ -32,10 +32,8 @@ export const Form = () => {
         <input onChange={e =>{setProfesion(e.target.value)}} type="text" placeholder='Profesión' className='TextBox'/><br />
         <input onChange={e =>{setCorreo(e.target.value)}} type="email" placeholder='Email' className='TextBox'/><br />
         <input onChange={e =>{setTelefono(e.target.value)}} type="text" placeholder='Teléfono' className='TextBox'/><br />
-        <input onChange={e =>{setDireccion(e.target.value)}} type="text" placeholder='Dirección' className='TextBox'/><br />
-        <button onClick={
-                <Tarjeta nombre={nombre} profesion={profesion} correo={correo} telefono={telefono} direccion={direccion} />
-        }>Generar</button>    
+        <input onChange={e =>{setDireccion(e.target.value)}} type="text" placeholder='Dirección' className='TextBox'/><br /> 
+        <Tarjeta nombre={nombre} profesion={profesion} correo={correo} telefono={telefono} direccion={direccion} />
     </form>
   )
 }

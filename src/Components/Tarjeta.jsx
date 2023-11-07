@@ -5,7 +5,7 @@ export const Tarjeta = (props) => {
 
     const {nombre,profesion,correo,telefono,direccion} = props
   return (
-    <div>
+    <div className='TarjetaBody'>
         <div className='inline'>
             <img src={Pic} alt="" className='ProfilePic'/>
             <div>
